@@ -65,7 +65,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Github page](https://andrianarivo.github.io/portfolio/)
+- [Github page](https://andrianarivo.github.io/portfolio-bootstrap//)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
