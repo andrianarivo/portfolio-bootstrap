@@ -1,3 +1,157 @@
+/**  SETTING **/
+
+$primaryColor: #1c1a19;
+$secondaryColor: #3e3c3c;
+$accentColor: #f55800;
+$cardBorderColor: #091e42;
+
+$greyColorLight: #f4f5f7;
+$greyColorDark: #cfcfcf;
+$borderGreyColor: #8993a4;
+
+$white: #fff;
+
+@font-face {
+  font-family: 'Crete Round';
+  src: url(./fonts/crete-round-regular.ttf);
+}
+
+@font-face {
+  font-family: 'Crete Round';
+  src: url(./fonts/crete-round-italic.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(./fonts/inter-regular.ttf);
+}
+
+html {
+  height: 100%;
+}
+
 body {
+  font-family: 'Inter';
   margin: 0;
+  height: 100%;
+}
+
+h2 {
+  font-family: 'Crete Round';
+}
+
+.btn-filled {
+  background-color: $accentColor;
+  border-radius: 0;
+  color: $white;
+  font-weight: 700;
+  font-family: 'Inter';
+  height: 3.6em;
+  padding: 0 1.5em;
+  border: none;
+}
+
+/**  HEADER CONTENT **/
+
+header {
+  background-image: url('./img/header-illustration.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-color: $primaryColor;
+  height: 90%;
+
+  &.container-fluid {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  a {
+    color: $white;
+  }
+
+  .navbar {
+    background-color: $secondaryColor;
+
+    .navbar-nav {
+      color: $white;
+      gap: 1em;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  .content {
+    color: $white;
+
+    .h1 {
+      color: $accentColor;
+    }
+
+    p {
+      color: $greyColorLight;
+      font-family: 'Inter';
+    }
+  }
+
+  .contact-icons {
+    gap: 1em;
+
+    li {
+      display: inline;
+      text-decoration: none;
+
+      a {
+        color: $greyColorDark;
+      }
+    }
+  }
+}
+
+main {
+  .header {
+    margin: 7em 0;
+    gap: 2em;
+  }
+
+  .projects {
+    .projects-header {
+      .languages {
+        padding: 0;
+        gap: 1em;
+        .language-item {
+          display: inline;
+          border: 1px solid $borderGreyColor;
+          padding: 0.5em;
+        }
+      }
+    }
+
+    .projects-list {
+      .project-item {
+        .project-card {
+          border: 1px solid $cardBorderColor;
+          .btn-card {
+            width: 100%;
+            color: $white;
+            height: 3.6em;
+            background-color: $accentColor;
+            text-decoration: none;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-expand-lg {
+    .navbar-collapse {
+      justify-content: flex-end;
+    }
+  }
 }

@@ -1,5 +1,118 @@
+/**  SETTING **/
+@font-face {
+  font-family: "Crete Round";
+  src: url(./fonts/crete-round-regular.ttf);
+}
+@font-face {
+  font-family: "Crete Round";
+  src: url(./fonts/crete-round-italic.ttf);
+  font-style: italic;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/inter-regular.ttf);
+}
+html {
+  height: 100%;
+}
+
 body {
+  font-family: "Inter";
   margin: 0;
+  height: 100%;
+}
+
+h2 {
+  font-family: "Crete Round";
+}
+
+.btn-filled {
+  background-color: #f55800;
+  border-radius: 0;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Inter";
+  height: 3.6em;
+  padding: 0 1.5em;
+  border: none;
+}
+
+/**  HEADER CONTENT **/
+header {
+  background-image: url("./img/header-illustration.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-color: #1c1a19;
+  height: 90%;
+}
+header.container-fluid {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header a {
+  color: #fff;
+}
+header .navbar {
+  background-color: #3e3c3c;
+}
+header .navbar .navbar-nav {
+  color: #fff;
+  gap: 1em;
+}
+header .navbar .navbar-nav a {
+  color: #fff;
+}
+header .content {
+  color: #fff;
+}
+header .content .h1 {
+  color: #f55800;
+}
+header .content p {
+  color: #f4f5f7;
+  font-family: "Inter";
+}
+header .contact-icons {
+  gap: 1em;
+}
+header .contact-icons li {
+  display: inline;
+  text-decoration: none;
+}
+header .contact-icons li a {
+  color: #cfcfcf;
+}
+
+main .header {
+  margin: 7em 0;
+  gap: 2em;
+}
+main .projects .projects-header .languages {
+  padding: 0;
+  gap: 1em;
+}
+main .projects .projects-header .languages .language-item {
+  display: inline;
+  border: 1px solid #8993a4;
+  padding: 0.5em;
+}
+main .projects .projects-list .project-item .project-card {
+  border: 1px solid #091e42;
+}
+main .projects .projects-list .project-item .project-card .btn-card {
+  width: 100%;
+  color: #fff;
+  height: 3.6em;
+  background-color: #f55800;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
