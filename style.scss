@@ -1,9 +1,13 @@
+/**  SETTING **/
+
 $primaryColor: #1c1a19;
 $secondaryColor: #3e3c3c;
 $accentColor: #f55800;
+$cardBorderColor: #091e42;
 
 $greyColorLight: #f4f5f7;
 $greyColorDark: #cfcfcf;
+$borderGreyColor: #8993a4;
 
 $white: #fff;
 
@@ -37,6 +41,19 @@ h2 {
   font-family: 'Crete Round';
 }
 
+.btn-filled {
+  background-color: $accentColor;
+  border-radius: 0;
+  color: $white;
+  font-weight: 700;
+  font-family: 'Inter';
+  height: 3.6em;
+  padding: 0 1.5em;
+  border: none;
+}
+
+/**  HEADER CONTENT **/
+
 header {
   background-image: url('./img/header-illustration.svg');
   background-repeat: no-repeat;
@@ -51,10 +68,7 @@ header {
   }
 
   a {
-     &:hover {
-      text-decoration: none;
-      color:$white;
-     }
+    color: $white;
   }
 
   .navbar {
@@ -62,7 +76,6 @@ header {
 
     .navbar-nav {
       color: $white;
-      align-items: center;
       gap: 1em;
 
       a {
@@ -71,11 +84,8 @@ header {
     }
   }
 
-  div.content {
+  .content {
     color: $white;
-    max-width: 40em;
-    display: flex;
-    align-items: center;
 
     .h1 {
       color: $accentColor;
@@ -86,51 +96,60 @@ header {
       font-family: 'Inter';
     }
   }
-}
 
-main {
-  .header {
-    display: flex;
-    align-items: center;
-    margin-top: 7em;
-    margin-bottom: 7em;
-    gap: 2em;
-    hr {
-      flex: 1;
-    }
-  }
+  .contact-icons {
+    gap: 1em;
 
-  .projects {
-    .project-header {
-      div.col-7 {
-        display: flex;
-        justify-content: center;
+    li {
+      display: inline;
+      text-decoration: none;
+
+      a {
+        color: $greyColorDark;
       }
     }
   }
 }
 
-.contact-icons {
-  min-width: 10em;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
+main {
+  .header {
+    margin: 7em 0;
+    gap: 2em;
+  }
 
-  li {
-    display: inline;
-    text-decoration: none;
+  .projects {
+    .projects-header {
+      .languages {
+        padding: 0;
+        gap: 1em;
+        .language-item {
+          display: inline;
+          border: 1px solid $borderGreyColor;
+          padding: 0.5em;
+        }
+      }
+    }
 
-    a {
-      color: $greyColorDark;
+    .projects-list {
+      .project-item {
+        .project-card {
+          border: 1px solid $cardBorderColor;
+          .btn-card {
+            width: 100%;
+            color: $white;
+            height: 3.6em;
+            background-color: $accentColor;
+            text-decoration: none;
+            font-weight: 700;
+          }
+        }
+      }
     }
   }
 }
 
 @media screen and (min-width: 992px) {
   .navbar-expand-lg {
-    padding: 0 10em;
-    height: 4em;
-
     .navbar-collapse {
       justify-content: flex-end;
     }

@@ -1,3 +1,4 @@
+/**  SETTING **/
 @font-face {
   font-family: "Crete Round";
   src: url(./fonts/crete-round-regular.ttf);
@@ -25,6 +26,18 @@ h2 {
   font-family: "Crete Round";
 }
 
+.btn-filled {
+  background-color: #f55800;
+  border-radius: 0;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Inter";
+  height: 3.6em;
+  padding: 0 1.5em;
+  border: none;
+}
+
+/**  HEADER CONTENT **/
 header {
   background-image: url("./img/header-illustration.svg");
   background-repeat: no-repeat;
@@ -45,60 +58,58 @@ header .navbar {
 }
 header .navbar .navbar-nav {
   color: #fff;
-  align-items: center;
   gap: 1em;
 }
 header .navbar .navbar-nav a {
   color: #fff;
 }
-header div.content {
+header .content {
   color: #fff;
-  max-width: 40em;
-  display: flex;
-  align-items: center;
 }
-header div.content .h1 {
+header .content .h1 {
   color: #f55800;
 }
-header div.content p {
+header .content p {
   color: #f4f5f7;
   font-family: "Inter";
 }
-
-main .header {
-  display: flex;
-  align-items: center;
-  margin-top: 7em;
-  margin-bottom: 7em;
-  gap: 2em;
-}
-main .header hr {
-  flex: 1;
-}
-main .projects .project-header div.col-7 {
-  display: flex;
-  justify-content: center;
-}
-
-.contact-icons {
-  min-width: 10em;
-  display: flex;
-  flex-direction: column;
+header .contact-icons {
   gap: 1em;
 }
-.contact-icons li {
+header .contact-icons li {
   display: inline;
   text-decoration: none;
 }
-.contact-icons li a {
+header .contact-icons li a {
   color: #cfcfcf;
 }
 
+main .header {
+  margin: 7em 0;
+  gap: 2em;
+}
+main .projects .projects-header .languages {
+  padding: 0;
+  gap: 1em;
+}
+main .projects .projects-header .languages .language-item {
+  display: inline;
+  border: 1px solid #8993a4;
+  padding: 0.5em;
+}
+main .projects .projects-list .project-item .project-card {
+  border: 1px solid #091e42;
+}
+main .projects .projects-list .project-item .project-card .btn-card {
+  width: 100%;
+  color: #fff;
+  height: 3.6em;
+  background-color: #f55800;
+  text-decoration: none;
+  font-weight: 700;
+}
+
 @media screen and (min-width: 992px) {
-  .navbar-expand-lg {
-    padding: 0 10em;
-    height: 4em;
-  }
   .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
   }

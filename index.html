@@ -18,10 +18,10 @@
   <body>
     <header class="container-fluid">
       <nav class="navbar fixed-top navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-lg">
           <a class="navbar-brand" href="#">Logo</a>
           <div class="collapse navbar-collapse">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav align-items-center">
               <li class="nav-item"><a class="nav-link">Portfolio</a></li>
               <li class="nav-item"><a class="nav-link">About</a></li>
               <li class="nav-item"><a class="nav-link">Contact</a></li>
@@ -34,9 +34,9 @@
           </div>
         </div>
       </nav>
-      <div class="content">
-        <div>
-          <ul class="contact-icons">
+      <div class="row align-items-center">
+        <div class="col-1">
+          <ul class="d-flex flex-column contact-icons">
             <li>
               <a
                 href="https://twitter.com/DAndrianarivo"
@@ -67,7 +67,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="col-4 content">
           <h2 class="h1">Hey There.</h2>
           <h2 class="h1">I'm David.</h2>
           <h3>I'm a Software Developer</h3>
@@ -81,13 +81,13 @@
     </header>
 
     <main class="container-xxl">
-      <div class="header">
+      <div class="d-flex align-items-center header">
         <h2 class="h2">My Recent Works</h2>
-        <hr />
+        <hr class="flex-grow-1 flex-shrink-0" />
       </div>
       <div class="projects">
-        <div class="project-header row">
-          <div class="col-7">
+        <div class="projects-header row">
+          <div class="col-7 d-flex justify-content-center">
             <img
               src="./img/project-header-image.png"
               width="684"
@@ -103,17 +103,33 @@
               text ever since the 1500s, when an unknown printer took a standard
               dummy text.
             </p>
-            <ul>
-              <li>CSS</li>
-              <li>HTML</li>
-              <li>Bootstrap</li>
-              <li>Ruby</li>
+            <ul class="d-flex languages">
+              <li class="language-item">CSS</li>
+              <li class="language-item">HTML</li>
+              <li class="language-item">Bootstrap</li>
+              <li class="language-item">Ruby</li>
             </ul>
-            <button>See project</button>
+            <button class="btn-filled">See project</button>
           </div>
         </div>
-        <div>
-          <div class="project-item"></div>
+        <div class="row mt-5 projects-list">
+          <div class="col-4 d-flex justify-content-center project-item">
+            <div class="project-card position-relative">
+              <img
+                src="./img/project-item-placeholder.png"
+                width="369"
+                height="435"
+                alt="project1"
+              />
+              <a
+                href="#"
+                class="position-absolute d-flex align-items-center justify-content-center bottom-0 start-0 btn-card"
+                >See project</a
+              >
+            </div>
+          </div>
+          <div class="col-4 project-item">Project1</div>
+          <div class="col-4 project-item">Project1</div>
         </div>
       </div>
     </main>
