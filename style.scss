@@ -1,3 +1,121 @@
+$primaryColor: #1c1a19;
+$secondaryColor: #3e3c3c;
+$accentColor: #f55800;
+
+$greyColorLight: #f4f5f7;
+$greyColorDark: #cfcfcf;
+
+$white: #fff;
+
+@font-face {
+  font-family: 'Crete Round';
+  src: url(./fonts/crete-round-regular.ttf);
+}
+
+@font-face {
+  font-family: 'Crete Round';
+  src: url(./fonts/crete-round-italic.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(./fonts/inter-regular.ttf);
+}
+
+html {
+  height: 100%;
+}
+
 body {
+  font-family: 'Crete Round';
   margin: 0;
+  height: 100%;
+}
+
+header {
+  background-image: url('./img/header-illustration.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-color: $primaryColor;
+  height: 90%;
+
+  &.container-fluid {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  a {
+    color: $white;
+  }
+
+  .navbar {
+    font-family: 'Inter';
+    background-color: $secondaryColor;
+
+    .navbar-nav {
+      color: $white;
+      align-items: center;
+      gap: 1em;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  div.content {
+    color: $white;
+    max-width: 40em;
+    display: flex;
+    align-items: center;
+
+    .h1 {
+      color: $accentColor;
+    }
+
+    p {
+      color: $greyColorLight;
+      font-family: 'Inter';
+    }
+  }
+}
+
+main {
+  .content {
+    display: flex;
+    align-items: center;
+
+    hr {
+      flex: 1;
+    }
+  }
+}
+
+.contact-icons {
+  min-width: 10em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  li {
+    display: inline;
+    text-decoration: none;
+
+    a {
+      color: $greyColorDark;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-expand-lg {
+    padding: 0 10em;
+    height: 4em;
+
+    .navbar-collapse {
+      justify-content: flex-end;
+    }
+  }
 }

@@ -1,5 +1,97 @@
+@font-face {
+  font-family: "Crete Round";
+  src: url(./fonts/crete-round-regular.ttf);
+}
+@font-face {
+  font-family: "Crete Round";
+  src: url(./fonts/crete-round-italic.ttf);
+  font-style: italic;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/inter-regular.ttf);
+}
+html {
+  height: 100%;
+}
+
 body {
+  font-family: "Crete Round";
   margin: 0;
+  height: 100%;
+}
+
+header {
+  background-image: url("./img/header-illustration.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-color: #1c1a19;
+  height: 90%;
+}
+header.container-fluid {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header a {
+  color: #fff;
+}
+header .navbar {
+  font-family: "Inter";
+  background-color: #3e3c3c;
+}
+header .navbar .navbar-nav {
+  color: #fff;
+  align-items: center;
+  gap: 1em;
+}
+header .navbar .navbar-nav a {
+  color: #fff;
+}
+header div.content {
+  color: #fff;
+  max-width: 40em;
+  display: flex;
+  align-items: center;
+}
+header div.content .h1 {
+  color: #f55800;
+}
+header div.content p {
+  color: #f4f5f7;
+  font-family: "Inter";
+}
+
+main .content {
+  display: flex;
+  align-items: center;
+}
+main .content hr {
+  flex: 1;
+}
+
+.contact-icons {
+  min-width: 10em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.contact-icons li {
+  display: inline;
+  text-decoration: none;
+}
+.contact-icons li a {
+  color: #cfcfcf;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-expand-lg {
+    padding: 0 10em;
+    height: 4em;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
