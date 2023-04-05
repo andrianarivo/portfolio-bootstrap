@@ -16,9 +16,13 @@ html {
 }
 
 body {
-  font-family: "Crete Round";
+  font-family: "Inter";
   margin: 0;
   height: 100%;
+}
+
+h2 {
+  font-family: "Crete Round";
 }
 
 header {
@@ -37,7 +41,6 @@ header a {
   color: #fff;
 }
 header .navbar {
-  font-family: "Inter";
   background-color: #3e3c3c;
 }
 header .navbar .navbar-nav {
@@ -62,12 +65,19 @@ header div.content p {
   font-family: "Inter";
 }
 
-main .content {
+main .header {
   display: flex;
   align-items: center;
+  margin-top: 7em;
+  margin-bottom: 7em;
+  gap: 2em;
 }
-main .content hr {
+main .header hr {
   flex: 1;
+}
+main .projects .project-header div.col-7 {
+  display: flex;
+  justify-content: center;
 }
 
 .contact-icons {

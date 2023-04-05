@@ -28,9 +28,13 @@ html {
 }
 
 body {
-  font-family: 'Crete Round';
+  font-family: 'Inter';
   margin: 0;
   height: 100%;
+}
+
+h2 {
+  font-family: 'Crete Round';
 }
 
 header {
@@ -54,7 +58,6 @@ header {
   }
 
   .navbar {
-    font-family: 'Inter';
     background-color: $secondaryColor;
 
     .navbar-nav {
@@ -86,12 +89,23 @@ header {
 }
 
 main {
-  .content {
+  .header {
     display: flex;
     align-items: center;
-
+    margin-top: 7em;
+    margin-bottom: 7em;
+    gap: 2em;
     hr {
       flex: 1;
+    }
+  }
+
+  .projects {
+    .project-header {
+      div.col-7 {
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 }
